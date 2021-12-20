@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from "./components/Container";
+import DivIzq from './components/DivIzq'
 
 function App() {
+
+  const styles = {
+    title: {
+      color: '#395B5D',
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+        <h1 style={styles.title}>SPLITTER</h1>
+            <DivIzq />
+    </Container>
+  )
 }
 
 export default App;
